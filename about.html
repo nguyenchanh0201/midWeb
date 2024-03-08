@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/about.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header>
+  <nav>
+      <img src="img/logo.png" alt="logo" class="logo">
+      <a href="index.html" class="active">HOME</a>
+      <a href="#" class="right">ABOUT</a>
+  </nav>
+</header>
+
+<section>
+  <div class="content">
+    <div class="container">
+      <h2 class="about">ABOUT ME</h2>
+      <img src="img/avt.jpg" alt="avatar">
+      <p>Creator of this website </p>
+    </div>
+    
+    <div class="container">
+      <p>I'm a Software Engineer student at Ton Duc Thang University. This is my first Web Programming Project. I can do basic HTML, CSS and JavaScript, create a responsive website regardless of devices.</p>
+      <a href="#" class="fa fa-facebook" style="display: none;"></a>
+      <a href="#" class="fa fa-instagram" style="display: none;"></a>
+      <button class="showMoreBtn">Contact me</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img src="img/logo.png" alt="">
+  <h2>&copy; Copyright Reserved</h2>
+  <p>Code and Design by <br> Nguyen Hoang Trung Chanh</p>
+</footer>
+
+<script src="script/about.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const showMoreBtn = document.querySelector('.showMoreBtn');
+    const facebookIcon = document.querySelector('.fa-facebook');
+    const instagramIcon = document.querySelector('.fa-instagram');
+
+    showMoreBtn.addEventListener('click', function() {
+      facebookIcon.style.display = 'inline-block';
+      instagramIcon.style.display = 'inline-block';
+      showMoreBtn.style.display = 'none';
+    });
+  });
+</script>
+
+</body>
+</html>
