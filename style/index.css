@@ -104,22 +104,17 @@ footer img {
 
 /* Responsive layout */
 @media screen and (max-width: 768px) {
-  .navbar a {
+  nav a {
     padding: 20px 10px;
-  }
-
-  .main,
-  .side {
-    flex: 100%;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .navbar a {
+  nav a {
     padding: 15px 10px;
   }
 
-  .header h1 {
-    font-size: 30px;
+  section {
+    padding: 10px;
   }
 }
