@@ -1,3 +1,26 @@
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: pink;
+  color: white;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,7 +28,11 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height of body to 100% of viewport height */
 }
+
 
 /* Sticky navbar */
 nav {
@@ -31,7 +58,7 @@ nav a {
   font-weight: bold;
 }
 
-nav .right {
+nav a.right {
   float: right;
 }
 
@@ -54,35 +81,19 @@ nav a.active:hover {
 
 /* Main column */
 section {
+  flex: 1;
   background-color: white;
   padding: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-.container {
-  background-color: aliceblue;
-  padding: 30px;
-  margin-bottom: 20px;
-}
-
-.content img {
-  max-width: 100%;
-  max-height: 200px; /* Adjust the maximum height as needed */
 }
 
 /* Footer */
 footer {
-  min-height: 50px; /* Adjust the minimum height as needed */
-  padding: 10px; /* Adjust the padding as needed */
+  padding: 20px;
   text-align: center;
-  border-top: 3px solid yellow;
   background: #158240;
   font-size: 8px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-
+  border-top: 3px solid yellow;
+  margin-top: auto; /* Push the footer to the bottom */
 }
 
 footer img {
@@ -90,31 +101,18 @@ footer img {
   border: none;
 }
 
-/* Social media icons */
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 60px;
+.content {
   text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+
+}
+.content img {
+  width: 300px;
+  vertical-align: top;
 }
 
-.fa:hover {
-  opacity: 0.7;
-}
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
 
-.fa-instagram {
-  background: pink;
-  color: white;
-}
 
-/* Show more button */
 .showMoreBtn {
   width: 150px;
   height: 50px;
