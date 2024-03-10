@@ -73,10 +73,16 @@ section {
 
 /* Footer */
 footer {
-  padding: 20px;
+  min-height: 50px; /* Adjust the minimum height as needed */
+  padding: 10px; /* Adjust the padding as needed */
   text-align: center;
+  border-top: 3px solid yellow;
   background: #158240;
   font-size: 8px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
 }
 
 footer img {
