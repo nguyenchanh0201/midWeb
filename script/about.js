@@ -1,11 +1,20 @@
-window.addEventListener("beforeunload", function(event) {
-    // Cancel the event
-    event.preventDefault();
-    // Chrome requires returnValue to be set
-    event.returnValue = "";
+// Select the button
+var showMoreBtn = document.querySelector('.showMoreBtn');
 
-    // Display the confirmation dialog
-    var confirmationMessage = "Are you sure you want to leave this page?";
-    event.returnValue = confirmationMessage; // For Chrome
-    return confirmationMessage; // For other browsers
-  });
+// Add click event listener to the button
+showMoreBtn.addEventListener('click', function() {
+  // Select the table container
+  var tableContainer = document.querySelector('.table-responsive');
+
+  // Toggle the display of the table container and change button text accordingly
+  if (tableContainer.style.display === 'none' || tableContainer.style.display === '') {
+    tableContainer.style.display = 'block';
+    showMoreBtn.textContent = 'SHOW LESS';
+  } else {
+    tableContainer.style.display = 'none';
+    showMoreBtn.textContent = 'SHOW MORE';
+  }
+});
+
+
+

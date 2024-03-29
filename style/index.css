@@ -58,6 +58,37 @@ section {
   flex: 70%;
   background-color: white;
   padding: 20px;
+  margin: auto;
+  max-width: 760px;   
+}
+#roster-table{
+  margin: auto;
+  border-collapse: collapse;
+  
+}
+
+.table-responsive {
+  border: 1px solid grey;
+}
+
+#roster-table thead th {
+  background-color: #158240;
+  color: white;
+  
+
+}
+#roster-table td {
+  border-bottom: 1px solid grey;
+}
+#roster-table  {
+  border: 1px solid grey;
+}
+
+#roster-table td:hover {
+  padding-bottom: 5px;
+}
+#roster-table tr td:nth-child(2) {
+  color: #158240;
 }
 
 /* Footer */
@@ -77,6 +108,7 @@ footer img {
 
 .content {
   text-align: center;
+  
 
 }
 .content img {
@@ -87,7 +119,7 @@ footer img {
 
 
 
-.showMoreBtn {
+.showMoreBtn, .showMoreBtn1 {
   width: 150px;
   height: 50px;
   background-color: #158240;
@@ -98,16 +130,8 @@ footer img {
   border-radius: 5px;
 }
 
-.showMoreBtn:hover {
+.showMoreBtn:hover, .showMoreBtn1:hover {
   color: yellow;
-}
-
-/* Responsive layout */
-@media screen and (max-width: 768px) {
-
-  nav a {
-    padding: 20px 10px;
-  }
 }
 
 /* Responsive layout */
@@ -131,3 +155,4 @@ footer img {
     font-size: 30px;
   }
 }
+
